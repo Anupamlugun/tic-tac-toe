@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Board from "./components/Board";
 import "./styles.scss";
-import winnerfun from "./components/winnerfun";
+import Winnerfun from "./components/winnerfun";
 import Gamestatus from "./components/gamestatus";
 const App = () => {
   const [squares, setsqures] = useState(Array(9).fill(null));
   const [isx, setx] = useState(true);
   console.log(squares);
+
+  const winner = Winnerfun(squares);
 
   const position = (e) => {
     console.log(e);
@@ -24,8 +26,6 @@ const App = () => {
     });
     setx(() => (isx ? false : true));
   };
-
-  const winner = winnerfun(squares);
 
   const resetgame = () => {
     setsqures(Array(9).fill(null));

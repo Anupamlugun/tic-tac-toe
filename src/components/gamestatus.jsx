@@ -6,7 +6,7 @@ const gamestatus = ({ isx, winner, squares }) => {
   if (gameover && !winner) {
     msg = "Game draw";
   } else {
-    msg = winner ? `winner is ${winner}` : `Next player is ${player}`;
+    msg = winner ? `winner is ${winner.winner}` : `Next player is ${player}`;
   }
   return <div>{msg}</div>;
 };
