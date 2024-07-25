@@ -3,17 +3,23 @@ import Square from "./Square";
 
 const Board = () => {
   const [squares, setsqures] = useState(Array(9).fill(null));
+  const [isx, setx] = useState(true);
   console.log(squares);
+
   const position = (e) => {
     console.log(e);
+    if (squares[e]) {
+      return;
+    }
     setsqures(() => {
       return squares.map((currentval, indexval) => {
         if (indexval === e) {
-          return "X";
+          return isx ? "x" : "0";
         }
         return currentval;
       });
     });
+    setx(() => (isx ? false : true));
   };
 
   const rendersquare = (p) => {
