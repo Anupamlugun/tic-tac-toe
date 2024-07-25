@@ -27,10 +27,21 @@ const App = () => {
 
   const winner = winnerfun(squares);
 
+  const resetgame = () => {
+    setsqures(Array(9).fill(null));
+  };
+  const gameover = squares.every((arr) => arr != null);
   return (
     <div className="app">
       <Gamestatus isx={isx} winner={winner} squares={squares} />
       <Board squares={squares} position={position} />
+      <button
+        className={`btn-reset  ${winner || gameover ? "active" : ""}`}
+        type="button"
+        onClick={resetgame}
+      >
+        Start new game
+      </button>
     </div>
   );
 };

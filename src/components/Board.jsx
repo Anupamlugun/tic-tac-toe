@@ -1,6 +1,6 @@
 import Square from "./Square";
 
-const Board = ({ squares, position, isx }) => {
+const Board = ({ squares, position }) => {
   const rendersquare = (p) => {
     return <Square value={squares[p]} onClick={() => position(p)} />;
   };
