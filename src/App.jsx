@@ -46,6 +46,7 @@ const App = () => {
       </button>
       <br></br>
       <span className="developer">Developed by Anupam lugun</span>
+      <div className="bg-balls"></div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 $green: #12e177;
 $orange: #ffc72a;
 $boardcolor: #0f7e20;
+$blue: rgb(0, 204, 255);
+$yellow: rgb(250, 242, 15);
 
 body {
   display: flex;
@@ -149,7 +151,7 @@ button {
   }
 
   &:before {
-    background-color: $orange;
+    background-color: $yellow;
     right: -75px;
     bottom: -75px;
     @media screen and (min-width: 476px) {
@@ -161,7 +163,7 @@ button {
   }
 
   &:after {
-    background-color: $green;
+    background-color: $blue;
     top: -75px;
     left: -75px;
     @media screen and (min-width: 476px) {
@@ -173,10 +175,10 @@ button {
   }
 }
 #bluex {
-  color: rgb(0, 204, 255);
+  color: $blue;
 }
 #yellow0 {
-  color: rgb(250, 242, 15);
+  color: $yellow;
 }
 .developer {
   font-size: x-small;
