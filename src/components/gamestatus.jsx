@@ -1,6 +1,6 @@
 const gamestatus = ({ isx, winner, squares }) => {
   const gameover = squares.every((arr) => arr != null);
-  console.log(gameover);
+  //console.log(gameover);
   const player = isx ? "X" : "0";
   let msg;
   if (gameover && !winner) {

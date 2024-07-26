@@ -6,7 +6,7 @@ import Gamestatus from "./components/gamestatus";
 const App = () => {
   const [squares, setsqures] = useState(Array(9).fill(null));
   const [isx, setx] = useState(true);
-  console.log(squares);
+  //console.log(squares);
 
   const winner = Winnerfun(squares);
 
@@ -44,6 +44,8 @@ const App = () => {
       >
         Start new game
       </button>
+      <br></br>
+      <span className="developer">Developed by Anupam lugun</span>
     </div>
   );
 };

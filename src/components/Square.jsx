@@ -2,7 +2,7 @@ const Square = ({ value, onClick, winner, winposition }) => {
   if (winner) {
     var [a, b, c] = winner.higlitline;
   }
-  console.log(a, b, c, winposition);
+  //console.log(a, b, c, winposition);
   return (
     <button
       type="button"
