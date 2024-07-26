@@ -19,7 +19,7 @@ const App = () => {
     setsqures(() => {
       return squares.map((currentval, indexval) => {
         if (indexval === e) {
-          return isx ? "X" : "0";
+          return isx ? "X" : "O";
         }
         return currentval;
       });

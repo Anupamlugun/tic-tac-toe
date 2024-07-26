@@ -1,7 +1,7 @@
 const gamestatus = ({ isx, winner, squares }) => {
   const gameover = squares.every((arr) => arr != null);
   //console.log(gameover);
-  const player = isx ? "X" : "0";
+  const player = isx ? "X" : "O";
   let msg;
   if (gameover && !winner) {
     msg = "Game draw";
