@@ -11,7 +11,7 @@ const App = () => {
   const winner = Winnerfun(squares);
 
   const position = (e) => {
-    console.log(e);
+    //console.log(e);
     if (squares[e] || winner) {
       return;
     }
@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="app">
       <Gamestatus isx={isx} winner={winner} squares={squares} />
-      <Board squares={squares} position={position} />
+      <Board squares={squares} position={position} winner={winner} />
       <button
         className={`btn-reset  ${winner || gameover ? "active" : ""}`}
         type="button"

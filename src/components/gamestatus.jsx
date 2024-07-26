@@ -8,6 +8,8 @@ const gamestatus = ({ isx, winner, squares }) => {
   } else {
     msg = winner ? `winner is ${winner.winner}` : `Next player is ${player}`;
   }
-  return <div>{msg}</div>;
+  return (
+    <div className={`${winner ? "text-green" : "text-orange"}`}>{msg}</div>
+  );
 };
 export default gamestatus;

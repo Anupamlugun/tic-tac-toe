@@ -1,8 +1,15 @@
 import Square from "./Square";
 
-const Board = ({ squares, position }) => {
+const Board = ({ squares, position, winner }) => {
   const rendersquare = (p) => {
-    return <Square value={squares[p]} onClick={() => position(p)} />;
+    return (
+      <Square
+        value={squares[p]}
+        onClick={() => position(p)}
+        winner={winner}
+        winposition={p}
+      />
+    );
   };
 
   return (
