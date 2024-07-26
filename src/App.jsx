@@ -33,7 +33,9 @@ const App = () => {
   const gameover = squares.every((arr) => arr != null);
   return (
     <div className="app">
+      <h2>TIC TAC TOE</h2>
       <Gamestatus isx={isx} winner={winner} squares={squares} />
+      <br></br>
       <Board squares={squares} position={position} winner={winner} />
       <button
         className={`btn-reset  ${winner || gameover ? "active" : ""}`}

@@ -1,12 +1,12 @@
 $green: #12e177;
 $orange: #ffc72a;
-$blue: #4c43d4;
+$boardcolor: #0f7e20;
 
 body {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  background-color: $blue;
+  background-color: $boardcolor;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -85,7 +85,7 @@ button {
   padding: 12px 18px;
   margin-top: 25px;
   transition: all 0.2s;
-  background-color: $blue;
+  background-color: $boardcolor;
   box-shadow: 0px 0px 0px 1px $orange;
   &.active {
     background-color: $orange;
